@@ -1,0 +1,13 @@
+<h2>Contact us 📧</h2>
+
+<form action="/contact" method="get">
+  <label for="name">Please write a name</label>
+  <input id="name" name="name" placeholder="Maria" type="text">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @team_members.each do |name| %>
+    <li><%= name.capitalize %></li>
+  <% end %>
+</ul>
